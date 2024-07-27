@@ -1,0 +1,59 @@
+<!-- Shree Ganeshay namah  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .lower-main{
+        /* display: flex; */
+      }
+      .lower-main ul{
+        display: flex;
+        gap: 30px;
+        position: relative;
+      }
+      .lower-link{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    position: relative;
+}
+.lower-link::after{
+   content: '';
+   position: absolute;
+   bottom: -20px;
+   height: 2px;
+   width: 100%;
+   left: 0;
+   background-color: #E5BF4A;;
+   transition-timing-function: ease-in-out; 
+   transform: scaleX(0);
+   transition: .3s;
+}
+.lower-link:hover::after{
+    transform: scaleX(1);
+}
+    .lower-main ul li{
+      list-style: none;
+    }
+    .lower-main ul li a{
+      text-decoration: none;
+      color: black;
+    }
+    </style>
+</head>
+<body>
+  <div class="lower-main">
+    <ul>
+      <li><a class="lower-link" href="">Home</a></li>
+      <li><a class="lower-link" href="">Cakes</a></li>
+      <li><a class="lower-link" href="">ABout</a></li>
+      <li><a class="lower-link" href="">Blog</a></li>
+      <li><a class="lower-link" href="">Contact</a></li>
+  </ul>
+</div>
+</body>
+</html>
